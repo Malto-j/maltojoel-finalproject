@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tech Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>💻 Tech Shop</h1>
+  <button class="cart-btn" onclick="scrollToCart()">
+    🛒 Cart <span class="badge" id="badge">0</span>
+  </button>
+</header>
+
+<div class="main">
+
+  <div class="products">
+    <h2>Products</h2>
+    <div class="grid" id="grid"></div>
+  </div>
+
+  <div class="cart-panel" id="cart-panel">
+    <h2>🛒 Your Cart</h2>
+    <div id="cart-body"><p class="empty">Your cart is empty.</p></div>
+    <div id="cart-footer" style="display:none;">
+      <div class="total-row">
+        <span>Total:</span>
+        <span id="total-price">₱0.00</span>
+      </div>
+      <div class="cart-btns">
+        <button class="clear-btn" onclick="clearCart()">🗑️ Clear Cart</button>
+        <button class="checkout-btn" onclick="checkout()">✅ Checkout</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html
